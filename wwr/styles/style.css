@@ -1,43 +1,48 @@
+:root {
+    --primary-color: #123751;
+    --secondary-color: #DCC789;
+    --accent1-color: #51342C;
+    --accent2-color: #AABD8C;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
-nav a {
-    text-align: center;
-}
 
-#hero-msg h1, #hero-msg h4 {
-    text-align: center;
-}
-
-.button-box {
-    text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-#background {
-    height: 725px;
-}
-nav a:hover {
-    background-color: black;
-    color: #d9c2a3;
-}    
-.icon {
-    width: 80px;
-}
 nav a {
     text-align: center;
     color: #65e7e7;
     text-decoration: none;
-}    
+}
+
+#hero-msg h1, #hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}
+
+.icon {
+    width: 80px;
+}
+
 footer p {
     font-size: 1.2em;
 }
+
 footer p a:hover {
     text-decoration: underline;
-} 
+}
+
 body {
     background-color: var(--secondary-color); /* Light background for the overall page */
 }
@@ -58,12 +63,10 @@ nav a:hover {
     background-color: var(--accent1-color); /* First accent color for buttons on hover for a distinct look */
 }
 
-/* Assuming #background was a typo or conceptual. If you have specific elements needing this, replace with correct selector. */
 .msg {
-    background-color: var(--secondary-color); /* Secondary color for message sections for readability */
+    background-color: var(--secondary-color); /* Assuming correction for message sections */
 }
 
 footer {
-    background-color: var(--primary-color); /* Reuse primary color for footer for consistency */
-}
-            
+    background-color: var(--primary-color); /* Consistent primary color for the footer */
+}    
