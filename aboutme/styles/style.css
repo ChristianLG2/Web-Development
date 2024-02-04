@@ -1,0 +1,69 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}    
+.icon {
+    width: 80px;
+}
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+}    
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: underline;
+} 
+body {
+    background-color: var(--secondary-color); /* Light background for the overall page */
+}
+
+header {
+    background-color: var(--primary-color); /* Primary color for the header */
+}
+
+nav a:hover {
+    background-color: var(--accent1-color); /* Accent color for nav links on hover */
+}
+
+.book, .join {
+    background-color: var(--accent2-color); /* Second accent color for booking and joining buttons */
+}
+
+.book:hover, .join:hover {
+    background-color: var(--accent1-color); /* First accent color for buttons on hover for a distinct look */
+}
+
+/* Assuming #background was a typo or conceptual. If you have specific elements needing this, replace with correct selector. */
+.msg {
+    background-color: var(--secondary-color); /* Secondary color for message sections for readability */
+}
+
+footer {
+    background-color: var(--primary-color); /* Reuse primary color for footer for consistency */
+}
+            
