@@ -70,3 +70,20 @@ nav a:hover {
 footer {
     background-color: var(--primary-color); /* Consistent primary color for the footer */
 }    
+.logo {
+    width: 80px;
+    /* Add any other necessary styles for the logo */
+}
+
+.icon {
+    width: 80px;
+    /* Add any other necessary styles for the icons */
+}
+a {
+    text-decoration: none;
+}
+#content-container {
+    max-width: 1600px;
+    margin: 0 auto; /* Centers the content */
+    width: 100%; /* Ensures it takes up full width up to the max */
+}
