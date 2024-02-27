@@ -5,9 +5,34 @@
     --secondary-color: #DCC789;
     --accent1-color: #51342C;
     --accent2-color: #AABD8C;
-
+    --link-color: #65e7e7; /* Adding variable for link color */
+    --hover-link-color: #d9c2a3; /* Variable for link hover color */
     --heading-font: 'IM Fell French Canon', serif;
     --paragraph-font: 'Lato', Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav a {
+    text-align: center;
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--hover-link-color);
 }
 
 #content {
@@ -15,33 +40,27 @@
     margin: 0 auto;
 }
 
-nav a {
-    text-align: center;
-    color: #65e7e7;
+.button-box, .book, .join {
+    background-color: var(--accent2-color);
+    color: black;
     text-decoration: none;
-    padding: 35px;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-#hero-msg h1, #hero-msg h4,
-.button-box,
-main section {
+.button-box:hover, .book:hover, .join:hover {
+    background-color: var(--accent1-color);
+}
+
+#hero-msg h1, #hero-msg h4, main section {
     text-align: center;
 }
 
-#background {
-    height: 725px;
-}
-
-nav a:hover {
-    background-color: black;
-    color: #d9c2a3;
-}
-
-.icon {
-    width: 80px;
-}
-
-footer p {
+footer {
+    background-color: var(--primary-color);
     font-size: 1.2em;
 }
 
@@ -49,70 +68,42 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-body {
-    background-color: var(--secondary-color); /* Light background for the overall page */
-    font-family: Lato, Arial, sans-serif;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--primary-color); /* Primary color for the header */
-}
-
-nav a:hover {
-    background-color: var(--accent1-color); /* Accent color for nav links on hover */
-}
-
-.book, .join {
-    background-color: var(--accent2-color); /* Second accent color for booking and joining buttons */
-}
-
-.book:hover, .join:hover {
-    background-color: var(--accent1-color); /* First accent color for buttons on hover for a distinct look */
-}
-
-.msg {
-    background-color: var(--secondary-color); /* Assuming correction for message sections */
-}
-
-footer {
-    background-color: var(--primary-color); /* Consistent primary color for the footer */
-}    
-.logo {
+.icon, .logo, .card-img {
     width: 80px;
-    /* Add any other necessary styles for the logo */
+    border: 10px solid transparent; /* For consistency, can adjust or remove based on design */
 }
 
-.icon {
-    width: 80px;
-    /* Add any other necessary styles for the icons */
+/* Ensuring consistent usage of the font-family variable */
+* {
+    font-family: var(--paragraph-font);
 }
+
+/* Additional styles for accessibility and visual design */
 a {
     text-decoration: none;
 }
-#content-container {
-    max-width: 1600px;
-    margin: 0 auto; /* Centers the content */
-    width: 100%; /* Ensures it takes up full width up to the max */
-}
+
 .home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-family: var(--heading-font);
     font-size: 2em;
-} 
-.book, .join {
-    background-color: #d9c2a3;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
 }
-.card-img {
-    border: 10px solid #d9c2a3;
-}
+
 main section img {
     box-sizing: border-box;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .button-box, .book, .join {
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+
+    nav a {
+        padding: 20px;
+    }
 }
