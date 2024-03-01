@@ -9,6 +9,8 @@
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 300px; /* Adjust this value as needed */
+
 }
 
 #content {
@@ -107,6 +109,7 @@ nav a:hover{
 
 #background {
     background-color: #14213d;
+    
 }
 
 .msg{
@@ -340,6 +343,12 @@ form {
     margin-top: 3em;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin-top: 150px; /* Adjust this value as needed */
+    margin-bottom: 300px;
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -361,9 +370,11 @@ form {
     #hero-msg h4 {
         display: none;
     }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
