@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+    <style>
+        
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+
+        .dynamic-text-wrapper {
+            display: inline-block;
+            white-space: nowrap;
+            border-right: 3px solid black; /* The caret */
+            overflow: hidden;
+            letter-spacing: 2px; /* Adjust spacing */
+        }
+
+        .dynamic-text {
+            display: inline-block;
+            animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+            /* Adjust the timing (2s) to control the speed of the typing effect */
+        }
+    </style>
+</head>
+<body>
+    <div id="content-container">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/CLGLogo.png" alt="LIIRA Rafting Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html">My Portfolio</a>
+                <a href="Resume.html">My Resume</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/desktp.png" alt="People enjoying white water rafting">
+            </div>
+            <section id="hero-msg">
+                <div class="content-wrapper">
+                    <div class="image-side">
+                        <img src="images/me.jpg" alt="Descriptive Alt Text" id="hero-img">
+                    </div>
+                    <div class="text-side">
+                        <span id="dynamicTitle" class="dynamic-text title-text">Title Here</span>
+                        <br>
+                        <span id="dynamicSubtitle" class="dynamic-text subtitle-text">Subtitle Here</span>
+                        <div class="box-button">
+                            <a class="book" href="rates.html">Learn About Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+                <h1 class="home-title" id="dynamic-title">Join The Adventure</h1>
+                <h4 id="dynamic-subtitle">Make Memories with LIIRA</h4>
+                <div class='button-box'>
+                    <a class='book' href="rates.html">Book Now</a>
+                </div>  
+            </section>
+        </div> 
+        <main class="home-grid">
+            <section class="rivers-card">
+                <img class="card-img" src="images/rivers.jpg" alt="river in forest">
+                <img class="icon" src="images/river_icon.png" alt="river icon">
+                <h2>Rivers</h2>
+            </section>
+            <section class="camping-card">
+                <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
+                <img class="icon" src="images/fire_icon.png" alt="fire icon">
+                <h2>Camping</h2>
+            </section>
+            <section class="rapids-card">
+                <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
+                <img class="icon" src="images/oars.png" alt="oars icon">
+                <h2>Rapids</h2>
+            </section>
+            <div id="background"></div> 
+            <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
+            <section class="msg">
+                <h2>Beyond the Excitement: A Journey Through Nature's Splendor</h2>
+                <p>Immerse yourself in the stunning landscapes, encompassing everything from valleys and meadows to canyons and towering peaks. This experience offers much more than just thrilling rapids. It's an ideal escape to unwind and soak in the natural splendor of the great outdoors.</p>
+                <a class='join' href="rivers.html">Join Us</a>
+            </section>
+        </main>
+        <footer>
+            <p>CLG &copy; 2024 - Christian Lira Gonzalez</p>
+            <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+            <p><a href="contactus.html"target="_blank">Contact Us</a></p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/christian-lira-6598341b9/" target="_blank">
+                    <img src="images/LinkedIn.png" alt="LinkedIn">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+    const titles = [
+    "I am a skilled dashboard developer",
+    "I am an insightful quantitative researcher",
+    "I am a Politics Debater",
+    "I am a creative workflow optimizer",
+    "I am an adept data analyst",
+    "I am Not a Robot",
+    "I am an experienced database designer",
+    "I am an inventive software user",
+    "I am a writer",
+    "I am a savvy business intelligence analyst",
+    "I am a competent data science strategist",
+    "Ich bin ein Deutsch Sprecher",
+    "I am a confident Python programmer",
+    "I am a Philosophy Debater",
+    "I am a resourceful Excel expert",
+    "I am a passionate tech enthusiast",
+    "I am a talented data visualization creator",
+    "I am a collaborative team player",
+    "I am a proficient SQL enthusiast",
+    "I am a dynamic problem solver",
+    "I am a knowledgeable machine learning practitioner",
+    "Soy Mexicano",
+    "我是讲汉语的人",
+    "I am an effective communicator"
+];
+    const subtitles = [
+    "My idea of a fun night is a data modeling party.",
+    "I'm a wizard at Excel, but I still can't make my spreadsheets do my laundry.",
+    "I don't need a GPS to navigate databases.",
+    "I'm on a first-name basis with AI, but we're not friends on social media.",
+    "I'm like a librarian for data: organized, efficient, and slightly obsessed with order.",
+    "I make data dance, but I still step on toes at weddings.",
+    "I can predict trends with machine learning, but still can't predict my mate addiction.",
+    "My programming bugs are not insects, but they still need squashing.",
+    "I can speak to Python and SQL, but my plant still won't listen.",
+    "In the world of code, I'm a chef cooking up algorithms."
+];
+    let currentIndex = 0;
+    let charIndex = 0;
+    let currentPhase = 0; // 0 for title, 1 for subtitle
+    let isDeleting = false;
+
+    function typeEffect() {
+        const currentText = currentPhase === 0 ? titles[currentIndex] : subtitles[currentIndex];
+        let displayText = currentText.substring(0, charIndex);
+
+        if (isDeleting) {
+            charIndex--;
+        } else {
+            charIndex++;
+        }
+
+        if (currentPhase === 0) {
+            document.getElementById("dynamicTitle").innerHTML = displayText;
+        } else {
+            document.getElementById("dynamicSubtitle").innerHTML = displayText;
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+            if (currentPhase === 0) {
+                // Title complete, start subtitle
+                setTimeout(() => {
+                    currentPhase = 1;
+                    charIndex = 0;
+                    typeEffect();
+                }, 500); // Short pause before starting subtitle
+            } else {
+                // Subtitle complete, pause before next title
+                setTimeout(() => {
+                    isDeleting = true;
+                    typeEffect();
+                }, 2000);
+            }
+        } else if (isDeleting && charIndex === 0) {
+            if (currentPhase === 1) {
+                // Prepare for next title
+                currentIndex = (currentIndex + 1) % titles.length;
+                currentPhase = 0;
+            }
+            isDeleting = false;
+        }
+
+        if (!isDeleting || currentPhase === 1) {
+            setTimeout(typeEffect, 150 - Math.random() * 100);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+</body>
+</html>
