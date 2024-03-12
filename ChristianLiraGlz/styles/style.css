@@ -47,18 +47,22 @@ nav a{
 #hero-msg {
     /* position: absolute; */
     /* top: 50%;
+    margin
     left: 50%; */
     /* transform: translateX(-50%) translateY(-50%); Adjusts to center the card with a vertical offset */
     /* display: flex; */
     /* align-items: center; */
     padding: 20px;
+    margin-top: 500px;
     background-color: #cec4a8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     grid-column: 2/4;
-    grid-row: 2/3;
+    grid-row: 2/4;
     margin: 0 auto;
+    height: 50%;
 }
+
 
 .content-wrapper {
     display: flex;
@@ -246,8 +250,9 @@ footer .social img{
 
 #hero {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     margin-top: -100px;
 
 }
