@@ -1,0 +1,680 @@
+/* Home Page */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rubik:wght@300&display=swap');
+
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+h2 {
+    font-family: 'Rubik', 'Raleway';
+}
+
+p {
+    font-family: 'Raleway', 'Rubik';
+}
+  
+.logo{
+    width: 100px;   
+  }
+  
+  #logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color:#F4F1DE;
+  }
+  
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-align: center;
+    color:#475B5C;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 1.2em;
+    font-family: 'Raleway';
+} 
+
+nav a:hover{
+    background-color: #f2f2f2;
+    color:#3D405B;
+}
+
+body{
+    background-color: #475B5C;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 10px;
+}
+
+#top-img{
+    width: 70%;
+}
+
+img {
+    text-align: center;
+}
+
+#top-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#background {
+    background-color:#F4F1DE;
+    width:100%;
+    height:700px;
+    grid-column: 1/6;
+    grid-row: 2/6;
+    
+}
+
+.msg{
+    background-color:#475B5C;
+    color:#F4F1DE;
+    height:500px; 
+    width:400px;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 1/4;
+    grid-row: 2/6;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+.msg2{
+    background-color:#475B5C;
+    color:#F4F1DE;
+    height:500px; 
+    width:300px;
+    justify-self: center;
+    align-self: center;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 4/6;
+    grid-row: 2/6;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+footer{
+    background-color:#F4F1DE;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+footer a{
+    color:#475B5C;
+    text-decoration: none;
+}
+  
+footer a:hover{
+    color:#475B5C;
+}
+
+footer p {
+    font-size: 1.2em;
+    color:#475B5C;
+}
+  
+footer p a:hover{
+    text-decoration: underline;
+}
+  
+footer .social img{
+    padding-top: 15px;
+}
+
+
+
+
+/*-----------------------  Shared Rooms website ------------------------*/
+
+#shared-msg img {
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* This maintains the aspect ratio of the image */
+    border-radius: 70%; /* Example to make the image round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example to add shadow for depth */
+}
+
+#shared-msg {
+    text-align: center; /* Centers text elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers flex items (including images) horizontally */
+    padding: 20px; /* Adds space inside the box around the content */
+    margin: 20px 0; /* Adds space outside the box, adjust as needed */
+    min-height: 300px; /* Ensures the box is at least 300px tall, adjust based on content */
+    width: 100%; /* Adjust the width as per requirement */
+    max-width: 600px; /* Ensures the box doesn't grow too large on wider screens */
+    margin: auto; /* This will center the box if its width is less than the container's width */
+}
+
+
+@media (max-width: 768px) {
+    #shared-msg img {
+        width: 50px; /* Smaller width for smaller devices */
+    }
+}
+
+.rating-grid {
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 80px 1fr 80px 1fr 80px 1fr 80px 1fr;
+}
+
+/*-----------------------  Logde ------------------------*/
+.lodge-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.rating-lodge{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lodge-spect{
+    align-self: center;
+    height:70%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#lodge {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.button-box-lodge {
+    text-align:center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------  Bunk House ------------------------*/
+.bunk-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.rating-bunk{
+    grid-column: 3/4;
+    grid-row:4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bunk-spect{
+    align-self: center;
+    height:70%;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-right: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#bunkhouse{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.button-box-bunk {
+    text-align:center;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------  University View  ------------------------*/
+.university-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.rating-university{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.university-spect{
+    align-self: center;
+    height:70%;
+    grid-column:2/3;
+    grid-row:6/7;
+    margin-right: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#university{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.button-box-university {
+    text-align:center;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------  Navoo  ------------------------*/
+.navoo-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.rating-navoo{
+    grid-column: 3/4;
+    grid-row:8/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navoo-spect{
+    align-self: center;
+    height:70%;
+    grid-column:2/3;
+    grid-row:8/9;
+    margin-right: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#navoo{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.button-box-navoo {
+    text-align:center;
+    grid-column: 3/4;
+    grid-row: 8/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------  END ------------------------*/
+
+
+.about-msg{
+    background-color:#F4F1DE;
+    color:#475B5C; 
+    width:70%;
+    justify-self: right;
+    line-height: 1.5em;
+    padding:35px;
+    grid-column: 4/6;
+    grid-row: 1/4;
+    box-shadow: 5px 5px 10px black;
+    margin: 20px;
+}
+
+.rate{
+    background-color: #F4F1DE;
+    text-decoration: none;
+    color: #475B5C;
+    font-size: 18px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    transition: linear .5s;
+    font-family: 'Raleway', 'Rubik';
+}
+
+.rate:hover{
+    background-color: #475B5C;
+    color:#F4F1DE;
+}
+
+
+/*-----------------------  Private Rooms website ------------------------*/
+
+#shared-msg{
+    margin-top: 20px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    font-family: 'Rubik', 'Raleway';
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-grid {
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 80px 1fr 80px 1fr 80px 1fr 80px 1fr;
+}
+
+/*-----------------------  Milano Flats ------------------------*/
+.milano-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.rating-milano{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.milano-spect{
+    align-self: center;
+    height:70%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#milano {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.button-box-milano {
+    text-align:center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------- American Avenue ------------------------*/
+.american-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.rating-american{
+    grid-column: 3/4;
+    grid-row:4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.american-spect{
+    align-self: center;
+    height:80%;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin-right: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#american {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+
+.button-box-american {
+    text-align:center;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------  Shelbourne ------------------------*/
+.shelbourne-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.rating-shelbourne{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shelbourne-spect{
+    align-self: center;
+    height:70%;
+    grid-column:2/3;
+    grid-row:6/7;
+    margin-right: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#shelbourne{
+    width: 100%; 
+    max-width: 70%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.button-box-shelbourne {
+    text-align:center;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------  brighton  ------------------------*/
+.brighton-tittle{
+    color:#475B5C;
+    background-color: #F4F1DE;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    margin-bottom: 10px;
+    padding:20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.rating-brighton{
+    grid-column: 3/4;
+    grid-row:8/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brighton-spect{
+    align-self: center;
+    height:70%;
+    grid-column:1/3;
+    grid-row:8/9;
+    margin-right: 10px;
+    background-color: #F4F1DE;
+    color:#475B5C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#brighton{
+    width: 100%; 
+    max-width: 70%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.button-box-brighton {
+    text-align:center;
+    grid-column: 3/4;
+    grid-row: 8/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------  END ------------------------*/
+
+
+.about-msg{
+    background-color:#F4F1DE;
+    color:#475B5C; 
+    width:70%;
+    justify-self: right;
+    line-height: 1.5em;
+    padding:35px;
+    grid-column: 4/6;
+    grid-row: 1/4;
+    box-shadow: 5px 5px 10px black;
+    margin: 20px;
+}
+
+.rate{
+    background-color: #F4F1DE;
+    text-decoration: none;
+    color: #475B5C;
+    font-size: 18px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    transition: linear .5s;
+    font-family: 'Raleway', 'Rubik';
+}
+
+.rate:hover{
+    background-color: #475B5C;
+    color:#F4F1DE;
+}
+
+.rating-grid img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100px; 
+    display: block; 
+    margin: 0 auto; 
+}
