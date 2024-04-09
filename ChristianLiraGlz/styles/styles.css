@@ -146,7 +146,7 @@ footer .social img{
 
 
 
-/*-----------------------  Shared Rooms website ------------------------*/
+
 
 #shared-msg img {
     width: 250px; /* Adjust the width as needed */
@@ -234,7 +234,7 @@ footer .social img{
     align-items: center;
 }
 
-/*-----------------------  Bunk House ------------------------*/
+/*-----------------------  BHouse ------------------------*/
 .bunk-tittle{
     color:#475B5C;
     background-color: #F4F1DE;
@@ -282,7 +282,7 @@ footer .social img{
     justify-content: center;
     align-items: center;
 }
-/*-----------------------  University View  ------------------------*/
+/*-----------------------  UView  ------------------------*/
 .university-tittle{
     color:#475B5C;
     background-color: #F4F1DE;
@@ -331,7 +331,7 @@ footer .social img{
     align-items: center;
 }
 
-/*-----------------------  Navoo  ------------------------*/
+/*-----------------------  Nav  ------------------------*/
 .navoo-tittle{
     color:#475B5C;
     background-color: #F4F1DE;
@@ -412,7 +412,7 @@ footer .social img{
 }
 
 
-/*-----------------------  Private Rooms website ------------------------*/
+/*-----------------------  Private  ------------------------*/
 
 #shared-msg{
     margin-top: 20px;
@@ -431,7 +431,7 @@ footer .social img{
     grid-template-rows: 80px 1fr 80px 1fr 80px 1fr 80px 1fr;
 }
 
-/*-----------------------  Milano Flats ------------------------*/
+/*-----------------------  Milano ------------------------*/
 .milano-tittle{
     color:#475B5C;
     background-color: #F4F1DE;
@@ -484,7 +484,7 @@ footer .social img{
     align-items: center;
 }
 
-/*----------------------- American Avenue ------------------------*/
+/*----------------------- American ------------------------*/
 .american-tittle{
     color:#475B5C;
     background-color: #F4F1DE;
@@ -536,7 +536,7 @@ footer .social img{
     justify-content: center;
     align-items: center;
 }
-/*-----------------------  Shelbourne ------------------------*/
+/*-----------------------  Shel ------------------------*/
 .shelbourne-tittle{
     color:#475B5C;
     background-color: #F4F1DE;
